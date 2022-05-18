@@ -1,20 +1,10 @@
-import { useState, useEffect } from 'react';
+import React from "react";
 
-import './App.css';
+const API_URL = 'http://www.omdbapi.com?apikey=26998ff4';
 
 const App = () => {
-  const [counter, setCounter] = useState(0);
-
-  useEffect (() => {
-    alert("You've changed counter to " + counter);
-  }, [counter]);
-
   return (
-    <div className="App">
-      <button onClick={() => setCounter((prevCount) => prevCount - 1)}>-</button>
-      <h1>{counter}</h1>
-      <button onClick={() => setCounter((prevCount) => prevCount + 1)}>+</button>
-    </div>
+    <h1>App</h1>
   );
 }
 
